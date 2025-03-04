@@ -1,0 +1,62 @@
+/* @import '@daks.dev/svelte.sdk/fonts/open-sans/variable'; */
+@import '@daks.dev/svelte.sdk/tailwind';
+
+@source './';
+
+@theme {
+  --font-sans:
+    'Open Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --navbar-height: 47px;
+}
+
+@layer base {
+  body {
+    @apply relative bg-neutral-100 font-normal text-gray-800 max-lg:snap-start dark:bg-gray-800 dark:text-neutral-100;
+  }
+
+  h1 {
+    @apply text-3.5xl md:text-4.5xl tracking-wide text-gray-500 sm:text-4xl lg:text-5xl dark:text-gray-300;
+  }
+
+  h2 {
+    @apply sm:text-3.5xl lg:text-4.5xl text-3xl tracking-wide text-slate-700 md:text-4xl dark:text-slate-500;
+  }
+
+  h3 {
+    @apply sm:text-2.5xl md:text-3.5xl text-2xl text-slate-800 lg:text-4xl dark:text-slate-400;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+}
+
+@layer utilities {
+  .min-h-screen--navbar {
+    min-height: calc(100vh - var(--navbar-height));
+  }
+  .max-h-screen--navbar {
+    max-height: calc(100vh - var(--navbar-height));
+  }
+
+  .snap-start,
+  .snap-center {
+    scroll-margin-top: var(--navbar-height);
+  }
+
+  .title {
+    @apply after:content-empty after:mt-4 after:block after:h-[5px] after:w-[25vw] after:bg-cyan-600 sm:after:w-[20vw] lg:after:w-[15vw] 2xl:after:w-[10vw] dark:after:bg-cyan-700;
+  }
+}
+
+main,
+[role='main'] {
+  @apply mb-8 flex flex-col;
+  padding-top: var(--navbar-height);
+}
+main > header,
+[role='main'] > header {
+  @apply mb-8 pt-4 sm:pt-5 md:pt-8 lg:mb-12;
+}
