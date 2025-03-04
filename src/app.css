@@ -47,7 +47,9 @@
   }
 
   .title {
-    @apply after:content-empty after:mt-4 after:block after:h-[5px] after:w-[25vw] after:bg-cyan-600 sm:after:w-[20vw] lg:after:w-[15vw] 2xl:after:w-[10vw] dark:after:bg-cyan-700;
+    &::after {
+      @apply content-empty mt-4 block h-[5px] w-[25vw] bg-cyan-600 sm:w-[20vw] lg:w-[15vw] 2xl:w-[10vw] dark:bg-cyan-700;
+    }
   }
 }
 

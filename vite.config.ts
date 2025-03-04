@@ -1,9 +1,9 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import tailwindcss from '@tailwindcss/vite';
 import { imagetools, yaml } from '@daks.dev/svelte.sdk/vite';
-import type { UserConfig } from 'vite';
+import { defineConfig } from 'vite';
 
-const config: UserConfig = {
+export default defineConfig({
   logLevel: 'info', // error
   plugins: [imagetools(), yaml(), sveltekit(), tailwindcss()],
   ssr: {
@@ -24,6 +24,4 @@ const config: UserConfig = {
     environment: 'jsdom',
     include: ['src/**/*.{test,spec}.{js,ts}']
   }
-};
-
-export default config;
+});
