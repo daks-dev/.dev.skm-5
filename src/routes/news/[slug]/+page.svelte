@@ -16,7 +16,7 @@
   {description} />
 
 <main itemprop="mainContentOfPage">
-  <header class="wrapper-lg">
+  <header class="frame">
     <h1 class="title mb-4">{title}</h1>
     <FormattedDate
       class="text-xl tracking-wide text-slate-600 dark:text-slate-400"
@@ -24,7 +24,7 @@
       parse="YY-MM-DD" />
   </header>
 
-  <div class="wrapper-lg flex gap-8 max-sm:flex-col">
+  <div class="frame flex gap-8 max-sm:flex-col">
     <div
       class="mt-2 flex shrink-0 flex-wrap justify-around gap-5 max-sm:order-last sm:flex-col sm:justify-start">
       {#each images as { src, width, height }}

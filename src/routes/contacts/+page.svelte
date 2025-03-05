@@ -57,11 +57,11 @@
 <main
   class="grow gap-8"
   itemprop="mainContentOfPage">
-  <header class="wrapper-lg mb-0">
+  <header class="frame mb-0">
     <h1 class="title">Контакты</h1>
   </header>
 
-  <div class="wrapper-lg flex items-center justify-around gap-8">
+  <div class="frame flex items-center justify-around gap-8">
     <Contacts
       class="h-fit py-4"
       {microdata} />
@@ -102,7 +102,7 @@
 
   <div
     class="
-      wrapper-lg xs:h-[35vmax] flex
+      frame xs:h-[35vmax] flex
       h-[40vmax] grow sm:h-[30vmax] md:h-[25vmax] lg:h-auto">
     <YandexMap
       class="

@@ -13,13 +13,10 @@ type MDData = {
   default: MDComponent;
 };
 
-const data = {
-  mds: import.meta.glob('$lib/content/news/**/index.md', {
-    eager: true
-  }),
+const promises = {
+  mds: import.meta.glob('$lib/content/news/**/index.md'),
   images: import.meta.glob('$lib/content/news/**/*.(avif|gif|heic|heif|jpeg|jpg|png|tiff|webp)', {
     query: { w: 288, meta: true },
-    eager: true,
     import: 'default'
   })
 };
@@ -27,19 +24,19 @@ const data = {
 const filter = (obj: Record<string, unknown>, dir: string | undefined) =>
   Object.keys(obj).filter((x) => x.split('/').at(-2) === dir);
 
-export const load = (({ params }) => {
+export const load = (async ({ params }) => {
   if (/^\d{2}-\d{2}-\d{2}$/.test(params.slug)) {
     const { slug } = params;
-    const md = filter(data.mds, slug)[0];
+    const md = filter(promises.mds, slug)[0];
     if (md) {
       const {
         metadata: { title, description },
         default: content
-      } = data.mds[md] as MDData;
+      } = (await promises.mds[md]()) as MDData;
 
       const images: ImageMetadata[] = [];
-      for (const image of filter(data.images, slug))
-        images.push(data.images[image] as ImageMetadata);
+      for (const image of filter(promises.images, slug))
+        images.push((await promises.images[image]()) as ImageMetadata);
       if (!images.length) images[0] = placeholder;
 
       return { slug, title, description, content, images };

@@ -39,7 +39,7 @@
   itemprop="mainContentOfPage">
   <div
     class="
-      wrapper-xl flex flex-wrap
+      frame-xl flex flex-wrap
       items-center pt-8 xl:pt-12">
     <header class="mb-12 flex w-fit flex-col">
       <Lightbox
@@ -151,7 +151,7 @@
 
   <div
     class="
-      wrapper-xl
+      frame-xl
       text-justify text-xs font-thin text-gray-600 lg:text-center
       lg:text-sm dark:text-gray-400">
     Любая информация, представленная на данном сайте, носит исключительно информационный характер и

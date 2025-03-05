@@ -21,15 +21,15 @@
 <main
   class="grow"
   itemprop="mainContentOfPage">
-  <header class="wrapper-lg mb-0">
+  <header class="frame mb-0">
     <h1 class="title">О предприятии</h1>
   </header>
 
   <div
     class="
-      wrapper-lg my-auto flex
+      frame my-auto flex
       flex-wrap gap-8 py-8 lg:flex-nowrap">
-    <div class="content bp:text-lg/relaxed flex-auto leading-relaxed">
+    <div class="frame bp:text-lg/relaxed flex-auto leading-relaxed">
       <h2>Строительная компания «МАСШТАБ»</h2>
       <p>
         Строительная компания «Масштаб» является достаточно молодой и перспективной организацией,
