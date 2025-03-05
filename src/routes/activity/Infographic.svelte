@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class="wrapper-lg grid
+  class="frame grid
         grid-cols-none gap-x-4 gap-y-10 py-8
         text-center sm:grid-cols-2 lg:grid-cols-3">
   {#each infographic as info}

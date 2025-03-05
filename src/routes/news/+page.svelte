@@ -19,11 +19,11 @@
   {description} />
 
 <main itemprop="mainContentOfPage snap-start">
-  <header class="wrapper-lg">
+  <header class="frame">
     <h1 class="title">Новости</h1>
   </header>
 
-  <div class="wrapper-lg xs:grid-cols-2 grid grid-cols-1 gap-8 md:grid-cols-3">
+  <div class="frame xs:grid-cols-2 grid grid-cols-1 gap-8 md:grid-cols-3">
     {#each items as { slug, title, description, images }}
       <a
         class="group oversee:text-sky-500 relative place-self-center"

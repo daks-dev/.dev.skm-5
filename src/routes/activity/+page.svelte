@@ -30,7 +30,7 @@
 <main
   class="mb-0 min-h-screen justify-between"
   itemprop="mainContentOfPage">
-  <header class="wrapper-lg mb-0">
+  <header class="frame mb-0">
     <h1 class="title">Направления деятельности</h1>
   </header>
 

@@ -15,7 +15,7 @@
   class="dark:bg-transparent"
   itemprop="mainContentOfPage"
   role="main">
-  <header class="wrapper-lg">
+  <header class="frame">
     <h1
       class="title"
       itemprop="name">
@@ -25,7 +25,7 @@
   </header>
 
   <div
-    class="readable wrapper-lg
+    class="readable frame
            text-slate-700 dark:text-slate-300">
     <div>
       Настоящая Политика конфиденциальности персональных данных (далее &mdash; Политика

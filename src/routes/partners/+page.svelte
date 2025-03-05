@@ -12,12 +12,12 @@
   {description} />
 
 <main itemprop="mainContentOfPage">
-  <header class="wrapper-lg">
+  <header class="frame">
     <h1 class="title">Наши партнеры</h1>
   </header>
 
   <GalleryKit
-    class="wrapper-lg gap-x-8 gap-y-12 lg:grid-cols-2"
+    class="frame gap-x-8 gap-y-12 lg:grid-cols-2"
     custom={{
       caption: 'text-lg text-slate-600 dark:text-slate-400'
     }}

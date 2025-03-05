@@ -14,7 +14,7 @@
   {title} />
 
 <main>
-  <header class="wrapper-lg">
+  <header class="frame">
     <h1 class="title">Iconify</h1>
   </header>
 

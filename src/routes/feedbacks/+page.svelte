@@ -10,13 +10,13 @@
   {description} />
 
 <main itemprop="mainContentOfPage">
-  <header class="wrapper-lg">
+  <header class="frame">
     <h1 class="title">Отзывы</h1>
   </header>
 
   <div
     class="
-      wrapper-lg mb-16
+      frame mb-16
       flex flex-wrap justify-around gap-y-8">
     {#each Array(5) as _val}
       <CardPlaceholder
