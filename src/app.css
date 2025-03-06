@@ -38,28 +38,28 @@
   }
 }
 
-@layer utilities {
-  .snap-start,
-  .snap-center {
-    @apply scroll-mt-(--navbar-height);
-  }
-}
-
-/*
-@utility min-h-screen--navbar {
-  @apply min-h-[calc(100vh-var(--navbar-height))];
-}
-@utility max-h-screen--navbar {
-  @apply max-h-[calc(100vh-var(--navbar-height))];
-}
-*/
-
 @utility title {
   &::after {
     @apply mt-4 block h-[5px] w-[25vw] sm:w-[20vw] lg:w-[15vw] 2xl:w-[10vw];
     @apply bg-cyan-600 dark:bg-cyan-700;
     @apply content-empty;
   }
+}
+
+@layer utilities {
+  .snap-start,
+  .snap-center {
+    @apply scroll-mt-(--navbar-height);
+  }
+
+  /*
+  .min-h--screen-navbar {
+    min-height: calc(100vh - var(--navbar-height));
+  }
+  .max-h--screen-navbar {
+    max-height: calc(100vh - var(--navbar-height));
+  }
+  */
 }
 
 :is(main, [role='main']) {
