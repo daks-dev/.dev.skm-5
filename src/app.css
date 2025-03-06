@@ -15,7 +15,10 @@
 
 @layer base {
   body {
-    @apply relative bg-neutral-100 font-normal text-gray-800 max-lg:snap-start dark:bg-gray-800 dark:text-neutral-100;
+    @apply relative max-lg:snap-start;
+    @apply font-normal;
+    @apply bg-neutral-100 text-gray-800 dark:bg-gray-800 dark:text-neutral-100;
+    @apply transition-colors duration-300 ease-in-out;
   }
 
   h1 {
