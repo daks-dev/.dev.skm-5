@@ -48,7 +48,7 @@
 
     <img
       class="
-        bg-loading bg-20% mx-auto
+        bg--loading bg-20% mx-auto
         mt-3 flex-initial bg-neutral-300 bg-center bg-no-repeat"
       src={image.thumbnail.src}
       width={image.thumbnail.width}

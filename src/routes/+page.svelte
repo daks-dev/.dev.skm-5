@@ -84,7 +84,7 @@
         </svelte:fragment>
         <img
           class="
-            bg-1/10 bg-loading bg-center bg-no-repeat
+            bg-10% bg--loading bg-center bg-no-repeat
             hover:sepia"
           src={logo.image.src}
           width={logo.image.width}
