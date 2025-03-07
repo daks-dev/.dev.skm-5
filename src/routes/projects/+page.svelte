@@ -17,7 +17,7 @@
   </header>
 
   <LightboxKit
-    class="frame gap-x-16 gap-y-12"
+    class="frame gap-x-8 gap-y-8"
     custom={{ overlay: 'overflow-offset' }}
     options={{ behaviour: 'loop' }}
     {sources}

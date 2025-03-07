@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { twMerge } from 'tailwind-merge';
   import { DEV } from 'esm-env';
   import { onMount } from 'svelte';
   import { Head, Icon, SvelteKitCounter } from '@daks.dev/svelte.sdk';
@@ -61,8 +62,7 @@
     <div class="frame flex">
       <div class="flex flex-col gap-8 border-r-2 pr-8 text-2xl">
         <a
-          class="button max-w-full rounded border"
-          class:disabled={waiting}
+          class={twMerge('button max-w-full rounded border', waiting && 'disabled')}
           href="/admin/iconify">
           Iconify
         </a>
