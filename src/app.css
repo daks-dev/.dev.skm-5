@@ -22,15 +22,20 @@
   }
 
   h1 {
-    @apply text-3.5xl md:text-4.5xl tracking-wide text-gray-500 sm:text-4xl lg:text-5xl dark:text-gray-300;
+    @apply text-3.5xl md:text-4.5xl sm:text-4xl lg:text-5xl;
+    @apply tracking-wide;
+    @apply text-gray-500 dark:text-gray-300;
   }
 
   h2 {
-    @apply sm:text-3.5xl lg:text-4.5xl text-3xl tracking-wide text-slate-700 md:text-4xl dark:text-slate-500;
+    @apply sm:text-3.5xl lg:text-4.5xl text-3xl md:text-4xl;
+    @apply tracking-wide;
+    @apply text-slate-700 dark:text-slate-500;
   }
 
   h3 {
-    @apply sm:text-2.5xl md:text-3.5xl text-2xl text-slate-800 lg:text-4xl dark:text-slate-400;
+    @apply sm:text-2.5xl md:text-3.5xl text-2xl lg:text-4xl;
+    @apply text-slate-800 dark:text-slate-400;
   }
 
   h4 {

@@ -1,4 +1,4 @@
-import type { PageLoad } from './$types';
+import type { PageServerLoad } from './$types';
 
 import placeholder from '$lib/assets/images/skm/logo.png?w=288&aspect=16:9&fit=contain&meta';
 
@@ -40,4 +40,4 @@ export const load = (async () => {
       })
   );
   return { items };
-}) satisfies PageLoad;
+}) satisfies PageServerLoad;

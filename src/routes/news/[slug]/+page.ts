@@ -4,6 +4,7 @@ import type { PageLoad } from './$types';
 import placeholder from '$lib/assets/images/skm/logo.png?w=288&meta';
 
 // export const prerender = 'auto';
+// export const ssr = false;
 
 type MDData = {
   metadata: {
@@ -39,7 +40,13 @@ export const load = (async ({ params }) => {
         images.push((await promises.images[image]()) as ImageMetadata);
       if (!images.length) images[0] = placeholder;
 
-      return { slug, title, description, content, images };
+      return {
+        slug,
+        title,
+        description,
+        content,
+        images
+      };
     }
     throw error(404, 'Not found [data]');
   }
