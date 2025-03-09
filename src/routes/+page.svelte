@@ -11,8 +11,8 @@
   import microdata from '$lib/configs/microdata';
   const { email, telephone } = microdata.organization;
 
-  import type { PageData } from './$types';
-  export let data: PageData;
+  import type { PageProps } from './$types';
+  let { data }: PageProps = $props();
   const { logo, infographic } = data;
 
   const show = (x: number) => (x < 480 && 1) || (x < 1024 && 2) || 1;

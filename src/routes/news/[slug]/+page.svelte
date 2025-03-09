@@ -4,8 +4,8 @@
 
   import '@daks.dev/svelte.sdk/styles/content.css';
 
-  import type { PageData } from './$types';
-  export let data: PageData;
+  import type { PageProps } from './$types';
+  let { data }: PageProps = $props();
   const { slug, title, description, content: Component, images } = data;
 
   /*
@@ -26,10 +26,12 @@
 <main itemprop="mainContentOfPage">
   <header class="frame">
     <h1 class="title mb-4">{title}</h1>
-    <FormattedDate
-      class="text-xl tracking-wide text-slate-600 dark:text-slate-400"
-      date={slug}
-      parse="YY-MM-DD" />
+    {#if slug}
+      <FormattedDate
+        class="text-xl tracking-wide text-slate-600 dark:text-slate-400"
+        date={slug}
+        parse="YY-MM-DD" />
+    {/if}
   </header>
 
   <div class="frame flex gap-8 max-sm:flex-col">

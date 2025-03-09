@@ -26,7 +26,6 @@ export const load = (async () => {
       .sort((x, y) => (x > y ? -1 : 1))
       .map(async (path) => {
         const slug = path.split('/').at(-2);
-
         const {
           metadata: { title, description }
         } = (await promises.mds[path]()) as MDData;

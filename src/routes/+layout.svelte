@@ -13,8 +13,8 @@
   import '../app.css';
   import '$iconify';
 
-  import type { LayoutData } from './$types';
-  export let data: LayoutData;
+  import type { LayoutProps } from './$types';
+  let { children, data }: LayoutProps = $props();
 
   import { app, nav } from '$lib/configs';
 
@@ -24,10 +24,10 @@
 <Head {app} />
 
 <RouteTransition
+  refresh={data.refresh}
   class="flex grow flex-col"
-  mode={1}
-  refresh={data.refresh}>
-  <slot />
+  mode={1}>
+  {@render children?.()}
 </RouteTransition>
 
 <Footer {...nav.footer} />

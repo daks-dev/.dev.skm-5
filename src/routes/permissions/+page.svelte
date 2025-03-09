@@ -1,9 +1,8 @@
 <script lang="ts">
   import { YandexMetrikaHit, LightboxKit } from '@daks.dev/svelte.sdk';
 
-  import type { PageData } from './$types';
-  export let data: PageData;
-
+  import type { PageProps } from './$types';
+  let { data }: PageProps = $props();
   const { sources, thumbnails } = data;
 
   const title = 'СКМ • Допуски';

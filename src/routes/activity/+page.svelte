@@ -10,8 +10,8 @@
     dataset: await screens()
   });
 
-  import type { PageData } from './$types';
-  export let data: PageData;
+  import type { PageProps } from './$types';
+  let { data }: PageProps = $props();
   const { infographic } = data;
 
   const show = (x: number) =>

@@ -4,8 +4,8 @@
 
   import '@daks.dev/svelte.sdk/styles/content.css';
 
-  import type { PageData } from './$types';
-  export let data: PageData;
+  import type { PageProps } from './$types';
+  let { data }: PageProps = $props();
   const { image } = data;
 
   const title = 'СКМ • О предприятии';

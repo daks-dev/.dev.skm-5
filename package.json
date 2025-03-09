@@ -1,6 +1,6 @@
 {
   "name": "@daks.dev/.dev.skm",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "DAKS.DEV EXP SKM site",
   "private": false,
   "scripts": {
@@ -20,7 +20,7 @@
     "run:update": "pnpm up"
   },
   "devDependencies": {
-    "@daks.dev/svelte.sdk": "^0.2.8",
+    "@daks.dev/svelte.sdk": "^0.3.0",
     "@iconify/svelte": "^4.2.0",
     "@nanostores/persistent": "^0.10.2",
     "@playwright/test": "^1.51.0",
@@ -31,7 +31,7 @@
     "@tailwindcss/vite": "^4.0.12",
     "@types/html-minifier-terser": "^7.0.2",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.13.9",
+    "@types/node": "^22.13.10",
     "@types/postcss-import": "^14.0.3",
     "@vitest/ui": "^3.0.8",
     "cookie": "^1.0.2",
